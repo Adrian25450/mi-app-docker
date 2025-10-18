@@ -43,8 +43,7 @@
 <body>
 
   <div class="header">
-    <img src="https://img.icons8.com/emoji/48/rocket.png" alt="Rocket Icon">
-    <h1>¡Despliegue automático con Jenkins!</h1>
+    <h1> 🎉¡Despliegue automático con Jenkins! 🎉</h1>
   </div>
 
   <div class="details">
