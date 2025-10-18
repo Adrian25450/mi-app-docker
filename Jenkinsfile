@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Adrian0526/mi-app-docker.git', branch: 'main'
+                git url: 'https://github.com/Adrian25450/mi-app-docker.git', branch: 'main'
             }
         }
 
