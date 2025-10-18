@@ -1,0 +1,8 @@
+FROM php:8.2-apache
+
+ARG BUILD_VERSION
+ENV BUILD_VERSION=$BUILD_VERSION
+
+COPY app/ /var/www/html/
+
+EXPOSE 80

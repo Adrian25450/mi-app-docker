@@ -1,0 +1,22 @@
+services:
+  jenkins:
+    image: jenkins/jenkins:2.528.1-lts
+    container_name: jenkins_taller7
+    privileged: true
+    user: root
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    restart: unless-stopped
+    command: >
+      bash -c "apt-get update &&
+      apt-get install -y docker.io docker-compose &&
+      exec /usr/bin/tini -- /usr/local/bin/jenkins.sh"
+
+volumes:
+  jenkins_data:
