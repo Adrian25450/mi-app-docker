@@ -6,7 +6,12 @@ Aplicación PHP desplegada automáticamente con Jenkins y Docker.
 
 ## 📁 Estructura del Proyecto
 
-mi-app-docker/ ├── Dockerfile ├── Jenkinsfile ├── README.md ├── app/ └── index.php
+mi-app-docker/ 
+├── Dockerfile 
+├── Jenkinsfile 
+├── README.md 
+├── app/ 
+    └── index.php
 
 Código
 
